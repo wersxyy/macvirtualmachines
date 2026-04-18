@@ -1,3 +1,5 @@
+UTM Guides
+
 The Deep-Dive Guide to Windows on UTM
 Setting up a Windows virtual environment on a modern Mac requires a strategic balancing act between emulation and virtualization, and understanding which path to take is the first step toward a smooth experience. If you are working with legacy versions like Windows XP or Windows 7, you are essentially asking your Mac to act like a computer from a completely different era. Because these operating systems were never designed for Apple Silicon or modern hardware, you must select the Emulate option in UTM to ensure the x86 architecture is properly handled. One of the biggest hurdles beginners face with these older versions is the "Blue Screen of Death" or constant boot loops during the initial setup; this is almost always caused by the hard drive interface settings. You must manually ensure that your virtual disk is set to IDE rather than the default VirtIO, as legacy Windows installers do not have the built-in drivers to "see" a modern virtualized drive. Once the installation begins, be patient—using the NTFS (Quick) option is usually the safest bet to get into the desktop environment as fast as possible.
 
